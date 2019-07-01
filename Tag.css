@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
+@keyframes chg {
+    0% {background-color: gray;}
+    25% {background-color: red;}
+    75% {background-color: blue;}
+    100% {background-color: gray;}
+}
+@keyframes move {
+    0% {left: 0px; top: 0px;}
+    50% {left: 850px; top: 300px;}
+    75% {left: 0px; top: 450px;}
+    100% {left: 0px; top: 0px;}
+}
+html {
+    flex: 1;
+    display: flex;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+    background-color: gray;
+    font-family: Helvetica, Ariel, sans-serif;
+}
+.hello {
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+    width: 350px;
+    border-radius: 1em;
+    padding-bottom: 1%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 2px 10px, inset rgba(0, 0, 0, 0.2) 0 0 50px;
+}
+.size {
+    font-size: 60px;
+    text-transform: capitalize;
+    margin: 1px;
+    padding: 1px;
+}
+body {
+    animation-name: chg;
+    animation-duration: 5s;
+    animation-iteration-count: 0;
+}
+.an {
+    animation-name: move;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: 0;
+    
+}
+.name {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: Apple Chancery, cursive;
+    color: black;
+    background-color: white;
+    margin: 20px 0px 30px 0px;
+}

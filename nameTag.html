@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+        <link rel="stylesheet" type="text/css" href="Tag.css">
+        <link rel="js" href="nameTag.js">
+    <body>
+        <div class="hello an">
+            <p class="size">Hello</p>
+            <span>My Name Is&hellip;</span>
+            <form class="name" id="name">
+                Parker
+            </form>
+        </div>
+        <div>
+             <input id="box" placeholder="Name">
+             <input type="submit" onClick="setName();">
+        </div>
+        <script>
+            function setName() {
+                document.getElementById("name").innerHTML = box.value;
+                // alert(rName);
+            }
+        </script>
+    </body>
+
+</html>
